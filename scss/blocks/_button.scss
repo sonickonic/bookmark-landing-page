@@ -1,0 +1,29 @@
+.btn {
+  border: none;
+  background-color: $soft-blue;
+  color: white;
+  font-weight: bold;
+  padding: 16px;
+  border-radius: 5px;
+  letter-spacing: 0.5px;
+  cursor: pointer;
+}
+
+.btn--grey {
+  background-color: hsl(229, 8%, 60%, 0.1);
+  color: $grayish-blue;
+}
+
+.btn--red {
+  background-color: $soft-red;
+}
+
+.btn--wide {
+  width: 100%;
+}
+
+.btn--border {
+  text-transform: uppercase;
+  border: white solid 2px;
+  background-color: transparent;
+}

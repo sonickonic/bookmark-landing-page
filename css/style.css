@@ -170,4 +170,34 @@ body {
   margin: 0 20px;
 }
 
+.btn {
+  border: none;
+  background-color: #5368df;
+  color: white;
+  font-weight: bold;
+  padding: 16px;
+  border-radius: 5px;
+  letter-spacing: 0.5px;
+  cursor: pointer;
+}
+
+.btn--grey {
+  background-color: rgba(145, 148, 161, 0.1);
+  color: #9194a1;
+}
+
+.btn--red {
+  background-color: #fa5757;
+}
+
+.btn--wide {
+  width: 100%;
+}
+
+.btn--border {
+  text-transform: uppercase;
+  border: white solid 2px;
+  background-color: transparent;
+}
+
 /*# sourceMappingURL=style.css.map */
