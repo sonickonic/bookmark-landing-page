@@ -1,0 +1,35 @@
+.section {
+  text-align: center;
+
+  &__img {
+    width: 100%;
+    margin-top: 40px;
+  }
+
+  &__title,
+  &__title--large {
+    margin-top: 110px;
+    color: $dark-blue;
+    font-weight: 500;
+    line-height: 1.4;
+  }
+
+  &__title--large {
+    margin-top: 100px;
+    font-size: 30px;
+  }
+
+  &__p {
+    padding: 0 16px;
+    margin: 16px 0 32px;
+    line-height: 1.7;
+    color: $grayish-blue;
+    font-weight: 400;
+  }
+
+  &__btn-container {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 40px;
+  }
+}
