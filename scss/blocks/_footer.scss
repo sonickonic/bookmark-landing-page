@@ -1,0 +1,61 @@
+.footer {
+  margin-top: 120px;
+  text-align: center;
+  color: white;
+  background-color: $soft-blue;
+
+  &__nav {
+    background-color: $dark-blue;
+    padding: 40px 0;
+  }
+
+  & svg path {
+    fill: white;
+  }
+
+  &__nav-list {
+    margin: 20px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+  }
+
+  &__nav-item {
+    text-transform: uppercase;
+    color: white;
+    text-decoration: none;
+    padding: 20px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+.form-container {
+  padding: 50px 16px;
+
+  &__span {
+    display: block;
+    margin: 20px 0;
+  }
+
+  &__title {
+    margin-bottom: 30px;
+    font-weight: 500;
+    line-height: 1.4;
+  }
+}
+
+.frontend-footer {
+  &__p {
+    padding: 10px;
+    font-size: 11px;
+    text-align: center;
+    & a {
+      color: hsl(228, 45%, 44%);
+    }
+  }
+}

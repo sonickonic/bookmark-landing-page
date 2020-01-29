@@ -1,0 +1,16 @@
+.form {
+  display: flex;
+  flex-direction: column;
+
+  &__input {
+    border: none;
+    padding: 16px;
+    border-radius: 5px;
+    margin-bottom: 16px;
+  }
+}
+
+::placeholder {
+  font-family: "Rubik", sans-serif;
+  opacity: 0.5;
+}
