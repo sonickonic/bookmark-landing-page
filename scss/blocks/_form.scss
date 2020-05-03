@@ -1,6 +1,7 @@
 .form {
   display: flex;
   flex-direction: column;
+  position: relative;
 
   &__input {
     border: none;
@@ -13,4 +14,50 @@
 ::placeholder {
   font-family: "Rubik", sans-serif;
   opacity: 0.5;
+}
+
+.error-msg {
+  font-style: italic;
+  letter-spacing: 0.5px;
+  font-size: 10px;
+  text-align: left;
+  position: absolute;
+  top: 55px;
+  left: 10px;
+  z-index: 1;
+}
+
+.correct-msg {
+  font-style: italic;
+  letter-spacing: 0.5px;
+  font-size: 10px;
+  text-align: left;
+  position: absolute;
+  top: 55px;
+  left: 10px;
+  z-index: 1;
+}
+
+.form--error {
+  &::after {
+    content: "";
+    position: absolute;
+    background: $soft-red;
+    border-radius: 0 0 5px 5px;
+    top: 49px;
+    right: 0;
+    height: 25px;
+    width: 100%;
+  }
+
+  &__input {
+    border: $soft-red solid 2px;
+    margin-bottom: 40px;
+  }
+}
+
+.form--correct {
+  &__input {
+    margin-bottom: 40px;
+  }
 }

@@ -67,7 +67,7 @@
                 <a class="nav__item" href="#Pricing">Pricing</a>
                 <a class="nav__item nav__item--last" href="#Contact">Contact</a>
                 <button
-                  class=" nav__btn btn btn--border btn--wide"
+                  class="nav__btn btn btn--border btn--wide"
                   type="submit"
                 >
                   Login
@@ -89,6 +89,9 @@
 
     <main class="main">
       <section class="section section-hero">
+        <div class="section__background">
+          <div class="section__color"></div>
+        </div>
         <img
           class="section__img"
           src="images/illustration-hero.svg"
@@ -117,12 +120,17 @@
           them on the go.
         </p>
         <ul class="tab-list">
-          <li class="tab-list__item">Simple Bookmarking</li>
+          <li class="tab-list__item tab-list__item--active">
+            Simple Bookmarking
+          </li>
           <li class="tab-list__item">Speedy Searching</li>
           <li class="tab-list__item tab-list__item--last">Easy Sharing</li>
         </ul>
 
         <div class="tab tab--active">
+          <div class="section__background">
+            <div class="section__color--left"></div>
+          </div>
           <img
             class="tab__img"
             src="images/illustration-features-tab-1.svg"
@@ -174,10 +182,10 @@
         </p>
         <div class="cards-container">
           <div class="card">
-            <img class="card__img" src="/images/logo-chrome.svg" alt="chrome" />
+            <img class="card__img" src="images/logo-chrome.svg" alt="chrome" />
             <h3 class="card__title">Add to Chrome</h3>
             <span class="card__caption">Minimum version 62</span>
-            <img class="card__br" src="/images/bg-dots.svg" alt="dots" />
+            <img class="card__br" src="images/bg-dots.svg" alt="dots" />
             <button class="btn btn--wide" type="submit">
               Add & Install Extension
             </button>
@@ -186,22 +194,22 @@
           <div class="card">
             <img
               class="card__img"
-              src="/images/logo-firefox.svg"
+              src="images/logo-firefox.svg"
               alt="firefox"
             />
             <h3 class="card__title">Add to Firefox</h3>
             <span class="card__caption">Minimum version 55</span>
-            <img class="card__br" src="/images/bg-dots.svg" alt="dots" />
+            <img class="card__br" src="images/bg-dots.svg" alt="dots" />
             <button class="btn btn--wide" type="submit">
               Add & Install Extension
             </button>
           </div>
 
           <div class="card">
-            <img class="card__img" src="/images/logo-opera.svg" alt="Opera" />
+            <img class="card__img" src="images/logo-opera.svg" alt="Opera" />
             <h3 class="card__title">Add to Opera</h3>
             <span class="card__caption">Minimum version 46</span>
-            <img class="card__br" src="/images/bg-dots.svg" alt="dots" />
+            <img class="card__br" src="images/bg-dots.svg" alt="dots" />
             <button class="btn btn--wide" type="submit">
               Add & Install Extension
             </button>
@@ -286,7 +294,7 @@
           </div>
         </div>
 
-        <button class="btn" type="submit">More Info</button>
+        <button class="btn btn--top-margin" type="submit">More Info</button>
       </section>
     </main>
 
@@ -360,5 +368,9 @@
         >. Coded by <a href="https://github.com/sonickonic">Sonickonic</a>.
       </p>
     </div>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
+    <script src="features.js"></script>
+    <script src="faq.js"></script>
+    <script src="email.js"></script>
   </body>
 </html>

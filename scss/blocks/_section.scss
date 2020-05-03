@@ -1,6 +1,31 @@
 .section {
   text-align: center;
 
+  &__background {
+    margin: 0;
+    position: relative;
+    z-index: -1;
+  }
+
+  &__color,
+  &__color--left {
+    position: absolute;
+    z-index: -2;
+    right: -30px;
+    top: 90px;
+    height: 200px;
+    width: 100%;
+    border-top-left-radius: 100px;
+    border-bottom-left-radius: 100px;
+    background-color: $soft-blue;
+  }
+
+  &__color--left {
+    top: 35px;
+    left: -30px;
+    border-radius: 0 100px 100px 0;
+  }
+
   &__img {
     width: 100%;
     margin-top: 40px;

@@ -7,11 +7,17 @@
   border-radius: 5px;
   letter-spacing: 0.5px;
   cursor: pointer;
+  box-shadow: 0px 2px 5px 0px rgba(83, 104, 223, 0.2);
+}
+
+.btn--top-margin {
+  margin-top: 50px;
 }
 
 .btn--grey {
   background-color: hsl(229, 8%, 60%, 0.1);
   color: $grayish-blue;
+  box-shadow: 0px 2px 5px 0px rgba(83, 104, 223, 0.2);
 }
 
 .btn--red {

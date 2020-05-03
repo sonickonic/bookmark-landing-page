@@ -1,3 +1,18 @@
+.form-container {
+  padding: 50px 30px;
+
+  &__span {
+    display: block;
+    margin: 20px 0;
+  }
+
+  &__title {
+    margin-bottom: 30px;
+    font-weight: 500;
+    line-height: 1.4;
+  }
+}
+
 .footer {
   margin-top: 120px;
   text-align: center;
@@ -31,21 +46,6 @@
     display: flex;
     align-items: center;
     justify-content: center;
-  }
-}
-
-.form-container {
-  padding: 50px 16px;
-
-  &__span {
-    display: block;
-    margin: 20px 0;
-  }
-
-  &__title {
-    margin-bottom: 30px;
-    font-weight: 500;
-    line-height: 1.4;
   }
 }
 

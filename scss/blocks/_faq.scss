@@ -1,0 +1,35 @@
+.faq {
+  &__question-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 0 15px 0;
+    border-bottom: 1px solid hsl(229, 8%, 60%, 30%);
+    cursor: pointer;
+  }
+
+  &__btn {
+    border: none;
+    height: 12px;
+    width: 18px;
+    background-color: transparent;
+    cursor: pointer;
+  }
+
+  &__question {
+    color: $dark-blue;
+    font-weight: 400;
+  }
+
+  &__answer {
+    color: hsl(229, 8%, 40%);
+    line-height: 2;
+    padding: 20px 0;
+    text-align: left;
+    display: none;
+  }
+}
+
+.faq--active {
+  display: block;
+}

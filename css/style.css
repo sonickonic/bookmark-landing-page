@@ -12,25 +12,17 @@ body {
 }
 
 /* blocks */
-.header {
-  background-color: white;
-  height: 85px;
-  position: fixed;
-  top: 0;
-  width: 100%;
-}
 .header__logo {
-  position: fixed;
+  position: relative;
   top: 40px;
   left: 30px;
-  z-index: 1;
+  z-index: -1;
 }
 
 .menu-container {
-  position: fixed;
+  position: absolute;
   top: 40px;
   right: 30px;
-  z-index: 1;
 }
 
 .toggler {
@@ -179,11 +171,17 @@ body {
   border-radius: 5px;
   letter-spacing: 0.5px;
   cursor: pointer;
+  box-shadow: 0px 2px 5px 0px rgba(83, 104, 223, 0.2);
+}
+
+.btn--top-margin {
+  margin-top: 50px;
 }
 
 .btn--grey {
   background-color: rgba(145, 148, 161, 0.1);
   color: #9194a1;
+  box-shadow: 0px 2px 5px 0px rgba(83, 104, 223, 0.2);
 }
 
 .btn--red {
@@ -206,6 +204,27 @@ body {
 
 .section {
   text-align: center;
+}
+.section__background {
+  margin: 0;
+  position: relative;
+  z-index: -1;
+}
+.section__color, .section__color--left {
+  position: absolute;
+  z-index: -2;
+  right: -30px;
+  top: 90px;
+  height: 200px;
+  width: 100%;
+  border-top-left-radius: 100px;
+  border-bottom-left-radius: 100px;
+  background-color: #5368df;
+}
+.section__color--left {
+  top: 35px;
+  left: -30px;
+  border-radius: 0 100px 100px 0;
 }
 .section__img {
   width: 100%;
@@ -234,6 +253,9 @@ body {
   padding-bottom: 40px;
 }
 
+.tab {
+  display: none;
+}
 .tab__img {
   width: 100%;
 }
@@ -253,17 +275,38 @@ body {
   display: none;
 }
 
+.tab--active {
+  display: block;
+}
+
 .tab-list {
+  font-size: 16px;
+  font-weight: 500;
   list-style: none;
   color: #9194a1;
 }
 .tab-list__item {
+  position: relative;
+  cursor: pointer;
   padding: 20px;
   border-top: 1px solid #9194a1;
 }
 .tab-list__item--last {
   border-bottom: 1px solid #9194a1;
   margin-bottom: 70px;
+}
+.tab-list__item--active {
+  color: #252b46;
+}
+.tab-list__item--active::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  transform: translateX(-50%);
+  left: 50%;
+  height: 4px;
+  width: 140px;
+  background: #fa5757;
 }
 
 .card {
@@ -281,12 +324,26 @@ body {
   font-weight: 500;
 }
 .card__caption {
+  color: #9194a1;
   display: block;
   margin: 16px 0;
 }
 .card__br {
   margin: 24px 0;
   margin-left: -24px;
+}
+
+.form-container {
+  padding: 50px 30px;
+}
+.form-container__span {
+  display: block;
+  margin: 20px 0;
+}
+.form-container__title {
+  margin-bottom: 30px;
+  font-weight: 500;
+  line-height: 1.4;
 }
 
 .footer {
@@ -321,19 +378,6 @@ body {
   justify-content: center;
 }
 
-.form-container {
-  padding: 50px 16px;
-}
-.form-container__span {
-  display: block;
-  margin: 20px 0;
-}
-.form-container__title {
-  margin-bottom: 30px;
-  font-weight: 500;
-  line-height: 1.4;
-}
-
 .frontend-footer__p {
   padding: 10px;
   font-size: 11px;
@@ -346,6 +390,7 @@ body {
 .form {
   display: flex;
   flex-direction: column;
+  position: relative;
 }
 .form__input {
   border: none;
@@ -357,6 +402,78 @@ body {
 ::placeholder {
   font-family: "Rubik", sans-serif;
   opacity: 0.5;
+}
+
+.error-msg {
+  font-style: italic;
+  letter-spacing: 0.5px;
+  font-size: 10px;
+  text-align: left;
+  position: absolute;
+  top: 55px;
+  left: 10px;
+  z-index: 1;
+}
+
+.correct-msg {
+  font-style: italic;
+  letter-spacing: 0.5px;
+  font-size: 10px;
+  text-align: left;
+  position: absolute;
+  top: 55px;
+  left: 10px;
+  z-index: 1;
+}
+
+.form--error::after {
+  content: "";
+  position: absolute;
+  background: #fa5757;
+  border-radius: 0 0 5px 5px;
+  top: 49px;
+  right: 0;
+  height: 25px;
+  width: 100%;
+}
+.form--error__input {
+  border: #fa5757 solid 2px;
+  margin-bottom: 40px;
+}
+
+.form--correct__input {
+  margin-bottom: 40px;
+}
+
+.faq__question-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 0 15px 0;
+  border-bottom: 1px solid rgba(145, 148, 161, 0.3);
+  cursor: pointer;
+}
+.faq__btn {
+  border: none;
+  height: 12px;
+  width: 18px;
+  background-color: transparent;
+  cursor: pointer;
+}
+.faq__question {
+  color: #252b46;
+  font-weight: 400;
+}
+.faq__answer {
+  color: #5e616e;
+  line-height: 2;
+  padding: 20px 0;
+  text-align: left;
+  display: none;
+}
+
+.faq--active {
+  display: block;
 }
 
 /*# sourceMappingURL=style.css.map */
