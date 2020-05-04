@@ -61,3 +61,23 @@
     margin-bottom: 40px;
   }
 }
+
+@include screen-l {
+  .form {
+    flex-direction: row;
+    justify-content: space-between;
+
+    &__input {
+      margin-bottom: 0;
+      margin-right: 16px;
+      width: 100%;
+    }
+  }
+
+  .form--error {
+    &::after {
+      left: 0;
+      width: 305px;
+    }
+  }
+}

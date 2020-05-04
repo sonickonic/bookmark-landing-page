@@ -33,3 +33,15 @@
 .faq--active {
   display: block;
 }
+
+@include screen-l {
+  .faq {
+    &__question {
+      font-size: 1.2em;
+    }
+
+    &__question:hover {
+      color: $soft-red;
+    }
+  }
+}

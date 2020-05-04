@@ -25,3 +25,14 @@
     margin-left: -24px;
   }
 }
+
+@include screen-l {
+  .card {
+    margin-bottom: 0;
+  }
+
+  .cards-container {
+    display: flex;
+    justify-content: center;
+  }
+}

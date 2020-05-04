@@ -6,3 +6,17 @@
     z-index: -1;
   }
 }
+
+@include screen-l {
+  .header {
+    max-width: 1110px;
+    margin: 40px auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    &__logo {
+      position: unset;
+    }
+  }
+}

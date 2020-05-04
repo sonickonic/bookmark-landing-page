@@ -61,3 +61,66 @@
     }
   }
 }
+
+@include screen-l {
+  .tab {
+    max-width: 1444px;
+    margin: auto;
+    margin-top: 75px;
+
+    &__title {
+      margin-top: 70px;
+      font-size: 2em;
+    }
+
+    &__p {
+      font-size: 1.2em;
+      max-width: 430px;
+    }
+    &__btn {
+      display: block;
+    }
+
+    &__img {
+      width: auto;
+      height: 400px;
+    }
+
+    &__description {
+      text-align: left;
+      margin-left: 120px;
+    }
+
+    &__container {
+      display: flex;
+      justify-content: center;
+      min-height: 350px;
+    }
+  }
+
+  .tab-list {
+    display: flex;
+    justify-content: center;
+
+    &__item {
+      min-width: 240px;
+      padding: 30px;
+      border-top: none;
+      border-bottom: 1px solid $grayish-blue;
+    }
+
+    &__item--last {
+      margin-bottom: 0;
+    }
+
+    &__item--active {
+      &::after {
+        width: 240px;
+      }
+    }
+
+    &__item:hover {
+      color: $soft-red;
+    }
+  }
+}

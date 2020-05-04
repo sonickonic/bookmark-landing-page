@@ -4,6 +4,8 @@
   &__span {
     display: block;
     margin: 20px 0;
+    text-transform: uppercase;
+    letter-spacing: 2.5px;
   }
 
   &__title {
@@ -56,6 +58,54 @@
     text-align: center;
     & a {
       color: hsl(228, 45%, 44%);
+    }
+  }
+}
+
+@include screen-l {
+  .form-container {
+    padding: 70px 30px;
+    max-width: 500px;
+    margin: auto;
+
+    &__title {
+      font-size: 2em;
+      letter-spacing: 1.1px;
+      margin-bottom: 40px;
+    }
+
+    &__span {
+      margin-bottom: 40px;
+    }
+  }
+
+  .footer {
+    &__nav {
+      display: flex;
+      align-items: center;
+      justify-content: space-evenly;
+      padding: 0;
+    }
+
+    &__nav-list {
+      margin-right: 400px;
+      flex-direction: row;
+    }
+
+    &__nav-item:hover {
+      color: $soft-red;
+    }
+  }
+
+  .social-links {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+
+    &__icon {
+      align-self: flex-end;
+      margin: 0 20px;
     }
   }
 }

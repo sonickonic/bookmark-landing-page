@@ -10,6 +10,12 @@
   box-shadow: 0px 2px 5px 0px rgba(83, 104, 223, 0.2);
 }
 
+.btn:hover {
+  color: $soft-blue;
+  box-shadow: 0 0 0 2px $soft-blue inset;
+  background-color: transparent;
+}
+
 .btn--top-margin {
   margin-top: 50px;
 }
@@ -20,8 +26,20 @@
   box-shadow: 0px 2px 5px 0px rgba(83, 104, 223, 0.2);
 }
 
+.btn--grey:hover {
+  color: $grayish-blue;
+  box-shadow: 0 0 0 2px $grayish-blue inset;
+  background-color: transparent;
+}
+
 .btn--red {
   background-color: $soft-red;
+}
+
+.btn--red:hover {
+  color: $soft-red;
+  box-shadow: 0 0 0 2px $soft-red inset;
+  background-color: white;
 }
 
 .btn--wide {
@@ -32,4 +50,31 @@
   text-transform: uppercase;
   border: white solid 2px;
   background-color: transparent;
+}
+
+@include screen-l {
+  .btn--grey {
+    margin-left: 20px;
+  }
+
+  .btn--red {
+    min-width: 120px;
+  }
+
+  .btn--wide {
+    width: auto;
+  }
+
+  .btn--border {
+    text-transform: uppercase;
+    border: none;
+    background-color: $soft-red;
+    min-width: 110px;
+  }
+
+  .btn--border:hover {
+    color: $soft-red;
+    box-shadow: 0 0 0 2px $soft-red inset;
+    background-color: white;
+  }
 }
