@@ -62,11 +62,16 @@
   }
 }
 
+@include screen-s {
+  .form-container {
+    max-width: 500px;
+    margin: auto;
+  }
+}
+
 @include screen-l {
   .form-container {
     padding: 70px 30px;
-    max-width: 500px;
-    margin: auto;
 
     &__title {
       font-size: 2em;

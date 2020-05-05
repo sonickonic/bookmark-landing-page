@@ -11,10 +11,11 @@
   }
 
   &__p {
-    margin: 16px 0 32px;
+    margin: 16px auto 32px;
     line-height: 1.7;
     color: $grayish-blue;
     font-weight: 400;
+    max-width: 430px;
   }
 
   &__btn {
@@ -62,39 +63,15 @@
   }
 }
 
-@include screen-l {
+@include screen-m {
   .tab {
     max-width: 1444px;
     margin: auto;
     margin-top: 75px;
 
-    &__title {
-      margin-top: 70px;
-      font-size: 2em;
-    }
-
-    &__p {
-      font-size: 1.2em;
-      max-width: 430px;
-    }
-    &__btn {
-      display: block;
-    }
-
     &__img {
       width: auto;
       height: 400px;
-    }
-
-    &__description {
-      text-align: left;
-      margin-left: 120px;
-    }
-
-    &__container {
-      display: flex;
-      justify-content: center;
-      min-height: 350px;
     }
   }
 
@@ -121,6 +98,38 @@
 
     &__item:hover {
       color: $soft-red;
+    }
+  }
+}
+
+@include screen-l {
+  .tab {
+    max-width: 1444px;
+    margin: auto;
+    margin-top: 75px;
+
+    &__title {
+      margin-top: 70px;
+      font-size: 2em;
+    }
+
+    &__p {
+      font-size: 1.2em;
+    }
+
+    &__btn {
+      display: block;
+    }
+
+    &__description {
+      text-align: left;
+      margin-left: 120px;
+    }
+
+    &__container {
+      display: flex;
+      justify-content: center;
+      min-height: 350px;
     }
   }
 }

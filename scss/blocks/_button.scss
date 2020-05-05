@@ -24,6 +24,7 @@
   background-color: hsl(229, 8%, 60%, 0.1);
   color: $grayish-blue;
   box-shadow: 0px 2px 5px 0px rgba(83, 104, 223, 0.2);
+  margin-left: 20px;
 }
 
 .btn--grey:hover {
@@ -52,15 +53,13 @@
   background-color: transparent;
 }
 
-@include screen-l {
-  .btn--grey {
-    margin-left: 20px;
-  }
-
+@include screen-s {
   .btn--red {
     min-width: 120px;
   }
+}
 
+@include screen-l {
   .btn--wide {
     width: auto;
   }
